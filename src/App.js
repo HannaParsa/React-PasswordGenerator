@@ -14,6 +14,8 @@ const App () => {
     const [includeSymbols, setIncludeSymbols] = useState(false)
     
     const handleGeneratePassword = () => {
-
+        if(!incluseNumbers && !includeUpperCase && !includeLowerCase && !includeSymbols){
+            notify("you must choose of the options at least", true)
+        }
     }
 }
