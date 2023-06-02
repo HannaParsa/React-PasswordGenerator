@@ -17,5 +17,9 @@ const App () => {
         if(!incluseNumbers && !includeUpperCase && !includeLowerCase && !includeSymbols){
             notify("you must choose of the options at least", true)
         }
+        else{
+           let characterList = ""
+           
+        }
     }
 }
