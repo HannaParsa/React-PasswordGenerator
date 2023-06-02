@@ -11,5 +11,8 @@ const App () => {
     const [includeUpperCase, setIncludesUpperCase] = useState(false)
     const [incluseNumbers, setIncludeNumbers] = useState(false)
     const [includeSymbols, setIncludeSymbols] = useState(false)
-
+    
+    const handleGeneratePassword = () => {
+        
+    }
 }
