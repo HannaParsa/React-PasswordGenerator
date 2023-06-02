@@ -9,10 +9,11 @@ const App () => {
     const [password, setPassword] = useState("")
     const [passwordLength, setPasswordLength] = useState(26)
     const [includeUpperCase, setIncludesUpperCase] = useState(false)
+    const [includeLowerCase, setIncludeLowerCase] = useState(false)
     const [incluseNumbers, setIncludeNumbers] = useState(false)
     const [includeSymbols, setIncludeSymbols] = useState(false)
     
     const handleGeneratePassword = () => {
-        
+
     }
 }
