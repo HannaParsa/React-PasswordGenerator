@@ -10,5 +10,6 @@ const App () => {
     const [passwordLength, setPasswordLength] = useState(26)
     const [includeUpperCase, setIncludesUpperCase] = useState(false)
     const [incluseNumbers, setIncludeNumbers] = useState(false)
+    const [includeSymbols, setIncludeSymbols] = useState(false)
 
 }
