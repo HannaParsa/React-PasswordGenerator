@@ -6,5 +6,8 @@ import { numbers, upperCaseLetters, lowerCaseLetters, specialCharacters } from '
 import { COPY_Fail, COPY_SUCCESS } from './message';
 
 const App () => {
-    
+    const [password, setPassword] = useState("")
+    const [passwordLength, setPasswordLength] = useState(26)
+    const
+
 }
