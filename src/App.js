@@ -19,7 +19,13 @@ const App () => {
         }
         else{
            let characterList = ""
-           
+           if (includeNumbers){
+               characterList = characterList + numbers
+           }
+           if (includeUpperCase){
+               characterList = characterList + includeUpperCase
+           }
+
         }
     }
 }
