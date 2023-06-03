@@ -46,6 +46,6 @@ const App = () => {
     return password
     }
     const copyToClipboard = (password) => {
-        
+        navigator.clipboard.writeText(password)
     }
 }
