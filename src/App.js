@@ -49,6 +49,11 @@ const App = () => {
         navigator.clipboard.writeText(password)
     }
     const notify = (message, hasError = false) => {
+        if(hasError){
 
+        }
+        else {
+            
+        }
     }
 }
