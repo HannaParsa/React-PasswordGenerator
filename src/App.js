@@ -43,5 +43,9 @@ const App = () => {
         const characterIndex = Math.round(Math.random() * characterListLength)
         password = password +  characterList.charAt(characterIndex)
     }
+    return password
+    }
+    const copyToClipboard = (password) => {
+        
     }
 }
