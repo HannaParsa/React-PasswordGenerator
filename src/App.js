@@ -48,4 +48,7 @@ const App = () => {
     const copyToClipboard = (password) => {
         navigator.clipboard.writeText(password)
     }
+    const notify = (message, hasError = false) => {
+
+    }
 }
