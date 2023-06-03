@@ -37,6 +37,10 @@ const App = () => {
         }
     }
     const creatPassword = (characterList) => {
-
+    let password =""
+    const characterListLength = characterList.length
+    for (let i = 0 ; i < passwordLength ; i ++){
+        
+    }
     }
 }
