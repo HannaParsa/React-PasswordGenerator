@@ -85,7 +85,12 @@ const App = () => {
         <div className="App">
           <div className="container">
             <div className="generator">
-
+              <h2 className = "generator__header"> 
+                password generator
+              </h2>
+              <div className="generator__password">
+                <h3>{password}</h3>
+              </div>
             </div>
           </div>
         </div>
