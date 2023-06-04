@@ -72,12 +72,13 @@ const App = () => {
              });
         }
     }
-    const handleCopyPassword (e) => {
+    const handleCopyPassword = (e) => {
         if(password === ""){
             notify(COPY_Fail, true)
         }
         else{
-            
+            copyToClipboard(password)
+            notify(COPY_SUCCESS, true)
         }
     }
 }
