@@ -117,6 +117,17 @@ const App = () => {
              <button onClick={handleGeneratePassword} className="generator__btn">
                 Generate Password
              </button>
+             <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                />
             </div>
           </div>
         </div>
