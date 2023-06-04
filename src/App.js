@@ -16,7 +16,7 @@ const App = () => {
     
     const handleGeneratePassword = () => {
         if(!includeNumbers && !includeUpperCase && !includeLowerCase && !includeSymbols){
-            //notify("you must choose of the options at least", true)
+            notify("you must choose of the options at least", true)
         }
         else{
            let characterList = ""
@@ -33,7 +33,7 @@ const App = () => {
                characterList = characterList + specialCharacters
            }
            setPassword(creatPassword(characterList))
-           //notify("password generated successfully", false)
+           notify("password generated successfully", false)
         }
     }
     const creatPassword = (characterList) => {
