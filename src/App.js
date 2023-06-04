@@ -9,7 +9,7 @@ import { COPY_Fail, COPY_SUCCESS } from './message';
 const App = () => {
     const [password, setPassword] = useState("")
     const [passwordLength, setPasswordLength] = useState(26)
-    const [includeUpperCase, setIncludesUpperCase] = useState(false)
+    const [includeUpperCase, setIncludeUpperCase] = useState(false)
     const [includeLowerCase, setIncludeLowerCase] = useState(false)
     const [includeNumbers, setIncludeNumbers] = useState(false)
     const [includeSymbols, setIncludeSymbols] = useState(false)
@@ -96,6 +96,19 @@ const App = () => {
               </div>
               <div className="form-group">
                 <label htmlFor="password-strength">Password length</label>
+                <input className="pw" defaultValue={passwordLength} onChange={(e) => setPasswordLength(e.target.value)} type="number" id="password-stregth" name="password-strength" max="26" min="8" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="uppercase-letters">Add Uppercase Letters</label>
+                <input checked={includeUpperCase} onChange={(e) => setIncludeUpperCase(e.target.checked)} type="checkbox" id="uppercase-letters" name="uppercase-letters" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="lowercase-letters">Add Lowercase Letters</label>
+                <input checked={includeLowerCase} onChange={(e) => setIncludeLowerCase(e.target.checked)} type="checkbox" id="lowercase-letters" name="lowercase-letters" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="include-numbers">Include Numbers</label>
+                <input checked={includeNumbers} onChange={(e) => setIncludeNumbers(e.target.checked)} type="checkbox" id="include-numbers" name="include-numbers" />
               </div>
             </div>
           </div>
