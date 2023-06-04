@@ -73,6 +73,11 @@ const App = () => {
         }
     }
     const handleCopyPassword (e) => {
-        
+        if(password === ""){
+            notify(COPY_Fail, true)
+        }
+        else{
+            
+        }
     }
 }
