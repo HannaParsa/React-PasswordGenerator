@@ -110,6 +110,13 @@ const App = () => {
                 <label htmlFor="include-numbers">Include Numbers</label>
                 <input checked={includeNumbers} onChange={(e) => setIncludeNumbers(e.target.checked)} type="checkbox" id="include-numbers" name="include-numbers" />
               </div>
+              <div className="form-group">
+                <label htmlFor="include-symbols">Include Symbols</label>
+                <input checked={includeSymbols} onChange={(e) => setIncludeSymbols(e.target.checked)} type="checkbox" id="include-symbols" name="include-symbols" />
+             </div>
+             <button onClick={handleGeneratePassword} className="generator__btn">
+                Generate Password
+             </button>
             </div>
           </div>
         </div>
