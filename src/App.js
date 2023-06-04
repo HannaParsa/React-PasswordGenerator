@@ -82,6 +82,12 @@ const App = () => {
         }
     }
     return(
-        
+        <div className="App">
+          <div className="container">
+            <div className="generator">
+
+            </div>
+          </div>
+        </div>
     )
 }
