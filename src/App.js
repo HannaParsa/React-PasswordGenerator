@@ -72,4 +72,7 @@ const App = () => {
              });
         }
     }
+    const handleCopyPassword (e) => {
+        
+    }
 }
