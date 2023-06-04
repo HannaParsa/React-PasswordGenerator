@@ -94,6 +94,9 @@ const App = () => {
                    <i onClick={handleCopyPassword} className="far fa-clipboard"></i>
                 </button>
               </div>
+              <div className="form-group">
+                <label htmlFor="password-strength">Password length</label>
+              </div>
             </div>
           </div>
         </div>
