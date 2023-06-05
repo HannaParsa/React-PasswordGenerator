@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import "./App.css"
 import { numbers, upperCaseLetters, lowerCaseLetters, specialCharacters } from './Character'
-import 'react-toastify/dist/ReactToastify.css';
-import { toast, ToastContainer } from 'react-toastify'
+//import 'react-toastify/dist/ReactToastify.css';
+//import { toast, ToastContainer } from 'react-toastify'
 import { COPY_Fail, COPY_SUCCESS } from './message';
 
 
@@ -50,7 +50,7 @@ const App = () => {
     }
     const notify = (message, hasError = false) => {
         if(hasError){
-            toast.error(message, {
+            /*toast.error(message, {
                 position: "top-center",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -58,10 +58,10 @@ const App = () => {
                 pauseOnHover: true,
                 draggable: true,
                 progress: undefined,
-            });
+            });*/
         }
         else {
-             toast(message, {
+             /*toast(message, {
                 position: "top-center",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -69,7 +69,19 @@ const App = () => {
                 pauseOnHover: true,
                 draggable: true,
                 progress: undefined,
-             });
+             });*/
+
+             /*<ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                />*/
         }
     }
     const handleCopyPassword = (e) => {
@@ -117,17 +129,7 @@ const App = () => {
              <button onClick={handleGeneratePassword} className="generator__btn">
                 Generate Password
              </button>
-             <ToastContainer
-                position="top-center"
-                autoClose={5000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-                />
+             
             </div>
           </div>
         </div>
